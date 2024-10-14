@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tasty Treats</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tasty Treat</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+         <section>
+            <header>
+                <div class="circle"></div>
+                <div class="circles"></div>
+                <a href="#" class="logo">Tasty<span>treats</span></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p class="header-sign-up">Sign up</p><br><hr>
+                 </header>
+                 
+<!--About page-->
+<div class="about">
+    <div class="box">
+                <center><h1 style="font-family: 'Gill Sans'">Choose your Order </h1>
+    <h2><i>Strawberry Cake</h2></i>
+    <div class="card">
+    <img src="small strawberry.jpg" width="350" lenght="350" border="5"> <img src="strawberry cake.jpg" width="280" lenght="260" border="5"> <img src="large strawberry.jpg" width="350" lenght="360" border="5"> 
+        <form class="order"><div class="card"></div><br>
+            <label for="size">Choose Size:</label>
+            <select id="size">
+                <option value="small">Small- P500</option>
+                <option value="medium">Medium- P800</option>
+                <option value="large">Large- P1,500</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="cakes" name="quantity" min="1" value="1">
+        </div>
+                  
+        <h2><i>Chocolate Cake</h2></i>
+        <div class="card">
+        <img src="small chocolate.jpg" alt="Chocolate cake" width="260" lenght="360" border="5"> <img src="chocolate cake.jpg" alt="Chocolate cake" width="360" lenght="360" border="5"> <img src="large chocolate.jpg" alt="Chocolate cake" width="260" lenght="360" border="5"> 
+        <form class="order"><br>
+            <label for="size">Choose Size:</label>
+            <select id="size">
+                <option value="small">Small- P500</option>
+                <option value="medium">Medium- P800</option>
+                <option value="large">Large- P1,500</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="cakes" name="quantity" min="1" value="1">
+        </div>
+            
+            <h2><i>Ube Cake</h2></i>
+            <div class="card">
+            <img src="small ube.jpg" alt="Ube cake" width="300" lenght="360" border="5"> <img src="ube.jpg" alt="Ube cake" width="540" lenght="460" border="5"> <img src="large ube.jpg" alt="Ube cake" width="240" lenght="360" border="5">  
+        <form class="order"><br>
+            <label for="size">Choose Size:</label>
+            <select id="size">
+                <option value="small">Small- P400</option>
+                <option value="medium">Medium- P600</option>
+                <option value="large">Large- P800</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="cakes" name="quantity" min="1" value="1">
+        </div>
+        
+        <h2><i>Vanilla Cake</h2></i>
+        <div class="card">
+        <img src="small vanilla.jpg" alt="Vanilla cake" width="260" lenght="360" border="5"> <img src="VANILLA.jpg" alt="Vanilla cake" width="260" lenght="360" border="5"> <img src="vanilla large.jpg" alt="Vanilla cake" width="260" lenght="360" border="5">  
+        <form class="order"><br>
+            <label for="size">Choose Size:</label>
+            <select id="size">
+                <option value="small">Small- P400</option>
+                <option value="medium">Medium- P600</option>
+                <option value="large">Large- P800</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="cakes" name="quantity" min="1" value="1">
+            <article>
+                <h2><i>Strawberry Cake</i></h2>
+                <fieldset>
+                    <legend>Strawberry Cake</legend>
+                    <div class="card"> 
+                        <img src="small strawberry.jpg" alt="Small Strawberry Cake"> 
+                        <img src="strawberry cake.jpg" alt="Medium Strawberry Cake">
+                        <img src="large strawberry.jpg" alt="Large Strawberry Cake"> 
+                    </div>
+                    </fieldset>
+            </article>
+        </div>
+    </div>
+</div>
+
+             <hr>
+            <form onsubmit="orderCake(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea><br>
+            
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required><br>
+            
+                <button type="submit" value="submit" class="submit-button">Submit Order</button>
+                <button type="button" onclick="cancelAction()">Cancel Order</button>
+                <script> function cancelAction() { alert("Ordered canceled.");}</script>
+                <br>
+            </form>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to reach out</p>
+                <p>Email: tastytreats@gmail.com</p>
+                <p>Phone: 0954678934</p>
+            </section>
+            <footer>
+                <p>&copy; 2024 John's Tasty Treats. All rights reserved.</p>
+            </footer>
+        
+        </form>
+        
+    </body>
+</html>
